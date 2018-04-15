@@ -25,10 +25,20 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "element-ui": "^2.3.4",
+    "material-design-icons": "^3.0.1",
+    "normalize.css": "^8.0.0",
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue-router": "^3.0.1"{{/router}},
+    "vuex": "^3.0.1"
+    "vuex-router-sync": "^5.0.0"
+    "whatwg-fetch": "^2.0.4",
+    "offline-plugin": "^4.9.0"
   },
   "devDependencies": {
+    "element-theme": "^2.0.1",
+    "element-theme-default": "^1.4.13",
+    "sass-loader": "^7.0.1",
     {{#lint}}
     "babel-eslint": "^7.2.3",
     "eslint": "^4.15.0",
