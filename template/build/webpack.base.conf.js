@@ -32,13 +32,26 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.css', '.json', '.scss', '.eot', '.svg', '.ttf', '.woff'],
     alias: {
       {{#if_eq build "standalone"}}
       'vue$': 'vue/dist/vue.esm.js',
       {{/if_eq}}
       '@': resolve('src'),
-    }
+      root: path.join(__dirname, '../src'),
+      components: path.join(__dirname, '../src/components'),
+      views: path.join(__dirname, '../src/views'),
+      router: path.join(__dirname, '../src/router'),
+      theme: path.join(__dirname, '../theme'), // get Element-UI icons
+      scss_vars: path.resolve(__dirname, '../src/styles/vars.scss'), //  get scss vars
+      styles: path.join(__dirname, '../src/styles') // get scss files
+    },
+    modules: [
+      // places where to search for required modules
+      utils.cwd('node_modules'),
+      utils.cwd('src'),
+      utils.cwd('theme')
+    ]
   },
   module: {
     rules: [
@@ -72,7 +85,8 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        // test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(ico|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,

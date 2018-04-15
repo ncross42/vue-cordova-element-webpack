@@ -39,6 +39,7 @@
     "element-theme": "^2.0.1",
     "element-theme-default": "^1.4.13",
     "sass-loader": "^7.0.1",
+    "json5": "^1.0.1",
     {{#lint}}
     "babel-eslint": "^7.2.3",
     "eslint": "^4.15.0",
@@ -119,7 +120,7 @@
     "ora": "^1.2.0",
     "rimraf": "^2.6.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
-    "url-loader": "^0.5.8",
+    "url-loader": "^1.0.1",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
