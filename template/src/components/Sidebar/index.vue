@@ -1,5 +1,5 @@
 <template>
-    <div id="sidebar" :class="{'open': active}">
+    <div id="sidebar" :class="{'open': aactive}">
     <el-menu theme="light" router>
         <div class="logo-container">
             <img class="logo" src="https://vuejs.org/images/logo.png" />
@@ -30,17 +30,18 @@
 export default {
   name: 'Sidebar',
   props: ['active'],
-  computed () {
-      active: () => {
-          console.log(this)
-          return this.active
-      }
+  computed: {
+    aactive () {
+      console.log(this)
+      return this.active
+    }
   }
 }
 </script>
 
 <style lang="scss">
 // You can import all your SCSS variables using webpack alias
-@import '~scss_vars';
+@import '../../../src/styles/vars.scss';
+// @import '~scss_vars';
 @import './style.scss';
 </style>
