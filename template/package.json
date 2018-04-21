@@ -36,7 +36,6 @@
     "offline-plugin": "^4.9.0"
   },
   "devDependencies": {
-    "element-theme": "^2.0.1",
     "element-theme-default": "^1.4.13",
     "element-theme-chalk" : "^2.3.4",
     "sass-loader": "^7.0.1",
