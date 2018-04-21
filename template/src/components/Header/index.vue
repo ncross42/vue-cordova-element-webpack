@@ -1,10 +1,8 @@
 <template>
 <header>
   <el-menu theme="dark" mode="horizontal">
-    <el-menu-item class="header-navicon" index="1">
-      <el-button type="text" @click="openSidebar">
-        <i class="md-icon">menu</i>
-      </el-button>
+    <el-menu-item class="header-navicon" index="1" @click="openSidebar">
+      <el-button type="text"><i class="md-icon">menu</i></el-button>
     </el-menu-item>
     <span class="header-title">{{title}}</span>
     <el-submenu class="header-menu" index="3">
@@ -20,7 +18,7 @@
 <script>
 export default {
   name: 'Header',
-  props: ['openSidebar', 'title']
+  props: ['title', 'openSidebar']
 }
 </script>
 

@@ -1,10 +1,8 @@
 <template>
   <div id="sidebar" :class="{'open': aactive}">
     <el-menu theme="light" router>
-      <el-menu-item class="header-navicon" index="9">
-        <el-button type="text" @click="closeSidebar">
-          <i class="md-icon">close</i>
-        </el-button>
+      <el-menu-item class="header-navicon" index="9" @click="closeSidebar">
+        <el-button type="text"><i class="md-icon">close</i></el-button>
       </el-menu-item>
       <div class="logo-container">
         <img class="logo" src="https://vuejs.org/images/logo.png" />

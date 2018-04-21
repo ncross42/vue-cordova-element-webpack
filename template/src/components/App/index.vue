@@ -3,7 +3,7 @@
   <div class="page-layout">
     <sidebar-component :active="sidebarOpened" :closeSidebar="closeSidebar" />
     <div class="page-layout-inner">
-      <header-component :openSidebar="openSidebar" :title="title" />
+      <header-component :title="title" :openSidebar="openSidebar"/>
       <main>
       <div class="main-content">
         <el-row class="container">
