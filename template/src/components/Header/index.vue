@@ -4,7 +4,7 @@
     <el-menu-item class="header-navicon" index="1" @click="openSidebar">
       <el-button type="text"><i class="md-icon">menu</i></el-button>
     </el-menu-item>
-    <span class="header-title">{{title}}</span>
+    <span class="header-title">\{{title}}</span>
     <el-submenu class="header-menu" index="3">
       <template slot="title">Workspace</template>
         <el-menu-item index="4-1">item one</el-menu-item>
