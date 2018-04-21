@@ -1,19 +1,19 @@
 <template>
 <div id="app">
-    <div class="page-layout">
-        <sidebar-component :active="sidebarOpened" />
-        <div class="page-layout-inner">
-            <header-component :openSidebar="openSidebar" :title="title" />
-            <main>
-            <div class="main-content">
-                <el-row class="container">
-                    <router-view></router-view>
-                </el-row>
-            </div>
-        </main>
-    </div>
-        <dimmer :active="obfuscatorActive" :closeSidebar="closeSidebar" />
-    </div>
+  <div class="page-layout">
+    <sidebar-component :active="sidebarOpened" :closeSidebar="closeSidebar" />
+    <div class="page-layout-inner">
+      <header-component :openSidebar="openSidebar" :title="title" />
+      <main>
+      <div class="main-content">
+        <el-row class="container">
+          <router-view></router-view>
+        </el-row>
+      </div>
+    </main>
+  </div>
+    <dimmer :active="obfuscatorActive" :closeSidebar="closeSidebar" />
+  </div>
 </div>
 </template>
 <script>
@@ -29,15 +29,15 @@ export default {
   },
   computed: {
     ...mapState({
-        sidebarOpened: state => {
-            return state.ui.sidebarOpened
-        },
-        obfuscatorActive: state => {
-            return state.ui.obfuscatorActive
-        },
-        title: state => {
-          return state.route.meta.title
-        }
+      sidebarOpened: state => {
+        return state.ui.sidebarOpened
+      },
+      obfuscatorActive: state => {
+        return state.ui.obfuscatorActive
+      },
+      title: state => {
+        return state.route.meta.title
+      }
     })
   },
   components: {
