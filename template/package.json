@@ -39,6 +39,7 @@
     "element-theme-default": "^1.4.13",
     "element-theme-chalk" : "^2.3.4",
     "sass-loader": "^7.0.1",
+    "node-sass": "^4.8.3",
     "json5": "^1.0.1",
     {{#lint}}
     "babel-eslint": "^7.2.3",
