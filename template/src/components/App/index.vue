@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <div class="page-layout">
-    <sidebar-component :active="sidebarOpened" :closeSidebar="closeSidebar" />
+    <sidebar-component :title="title" :active="sidebarOpened" :closeSidebar="closeSidebar" />
     <div class="page-layout-inner">
       <header-component :title="title" :openSidebar="openSidebar"/>
       <main>
